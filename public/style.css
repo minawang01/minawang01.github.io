@@ -10,7 +10,7 @@
   background: url("/public/images/parallax.jpg");
   color: white;
   background-attachment: fixed;
-  background-position: background;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,7 +18,11 @@
 a:hover {
   text-decoration: none !important;
   color: white;
-  /* color: rgb(237, 11, 245);*/
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 /*NAV*/
@@ -33,7 +37,7 @@ a:hover {
   width: 4rem;
   height: 2rem;
   position: relative;
-  font-family: "Bebas Neue";
+  font-family: "Open Sans", sans-serif;
 }
 
 a.glitch {
@@ -48,7 +52,6 @@ a.glitch {
 }
 
 #content {
-  /* border: solid red;*/
   padding-bottom: 5.5rem;
 }
 
@@ -83,17 +86,19 @@ div.home .text p {
 div.transition {
   height: 15vh;
 }
-/*
-div#first_transition {
-  height: 25vh;
-  background: url("/images/invertedparallaxgrey.png");
+
+div#sec_transition {
+  height: 45vh;
+  background: url("/public/images/invertedparallaxgrey.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}*/
+}
+
 .home .text,
-.portfolio .text {
+.portfolio .text,
+.transition .text {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
 }
@@ -113,7 +118,7 @@ div.transition div.glitch_container {
 .transition .line {
   width: 1px;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   position: absolute;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -172,20 +177,6 @@ div#about div.transition {
 div.dots_container:nth-child(2) {
   transform: translate(-5rem, 4rem);
 }
-/*HOBBIES*/
-
-.hobbyimg img {
-  width: 100%;
-  height: 20vh;
-  object-fit: cover;
-  border-radius: 50%;
-  background: url("/public/images/invertedparallaxgrey.png");
-  opacity: 40%;
-}
-
-.hobbyimg:hover img {
-  opacity: 80%;
-}
 
 div.end {
   position: absolute;
@@ -198,54 +189,17 @@ div.end span:last-child {
   padding-left: 2rem;
 }
 
-div#projects .carousel_container {
-  height: 60vh;
-  border: 1px solid white;
-}
 div#projects div.transition {
   padding-top: 4rem;
 }
 
-div#travel iframe {
-  width: 100%;
-  height: 45vh;
-  object-fit: cover;
-  border: 2px solid whitesmoke;
-}
-
-div#travel .text h1 {
-  text-transform: uppercase;
-}
-
-div#travel div.glitch_container {
-  position: relative;
-}
-
-div#travel h1.glitch {
-  position: absolute;
-  top: 0;
-}
-
-div#travel div.transition {
-  padding-top: 4rem;
-}
-
-div#cook {
-  min-height: 70vh;
-  padding-top: 3rem;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-
-div#cook img {
-  height: 30vh;
-}
-
-div#cook .text h1 {
-  text-transform: uppercase;
-}
-
 /*PORTFOLIO STYLING*/
+
+h1.portfolio-heading {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 3rem;
+}
 
 div.portfolio ul {
   list-style: none;
@@ -254,19 +208,41 @@ div.portfolio {
   min-height: 90vh;
 }
 
+div.subheading .text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 div.heading,
 div.page {
   padding-left: 15vw;
   padding-right: 15vw;
-  height: 80vh;
+  min-height: 80vh;
 }
 
+div.work-container,
+div#publications {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+div.project_item {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+div.project_item:first-child {
+  margin-bottom: 2.5rem;
+}
+
+div.project_item:last-child {
+  margin-top: 2.5rem;
+}
 div.heading div.header_text {
   height: 30%;
 }
-div.heading div.circle_container {
-  height: 50%;
-}
+
 div.text_header {
   height: 100%;
 }
@@ -276,17 +252,8 @@ div.portfolio div.header_text {
   font-size: 8rem;
 }
 
-div.reference:first-child {
-  position: absolute;
-  top: 1rem;
-}
-
-div.reference:last-child {
-  position: absolute;
-  bottom: 1rem;
-}
-
-div.article_item {
+div.article_item,
+div.project_item {
   position: relative;
 }
 
@@ -298,24 +265,34 @@ div.portfolio div.card-body {
   width: 100%;
   background-color: rgb(220, 220, 220, 0.6);
   color: black;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
-div.article_item:hover div.card-body {
+div.project_item div.card-body {
+  background-color: rgb(89, 89, 89, 0.8);
+  color: white;
+  height: 100%;
+  font-size: 1rem;
+}
+
+div.card-body .hline {
+  background: white;
+}
+
+div.article_item:hover div.card-body,
+div.project_item:hover div.card-body {
   animation: fadeinimg 2s ease-in linear;
   display: block;
 }
 
-div.article_item {
+div.article_item,
+div.project_item {
   margin-top: 1rem;
   border: transparent;
 }
 
-div.subheading {
-  height: vh;
-}
-
-div#publications h1 {
+div#publications h1,
+div#programming h1 {
   text-transform: uppercase;
   text-align: justify;
   overflow: hidden;

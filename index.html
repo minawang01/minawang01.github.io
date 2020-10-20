@@ -44,29 +44,13 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav id="navigation" class="nav navbar">
+      <nav id="navigation" class="nav d-flex justify-content-center navbar">
         <div id="navbarNav" class="row">
-          <!-- <div class="nav_item contain_glitch col-auto" id="goto_home">
-            <a class="glitch" href="/">home</a>
-            <a class="glitch" href="/">home</a>
-            <a class="glitch" href="/">home</a>
-          </div> -->
           <div class="nav_item contain_glitch col-auto" id="goto_portfolio">
-            <a class="glitch" href="https://www.minawang.com/portfolio/"
-              >portfolio</a
-            >
-            <a class="glitch" href="https://www.minawang.com/portfolio/"
-              >portfolio</a
-            >
-            <a class="glitch" href="https://www.minawang.com/portfolio/"
-              >portfolio</a
-            >
+            <a class="glitch" href="#sec_transition">portfolio</a>
+            <a class="glitch" href="#sec_transition">portfolio</a>
+            <a class="glitch" href="#sec_transition">portfolio</a>
           </div>
-          <!-- <div class="nav_item contain_glitch col-auto" id="goto_resume">
-            <a class="glitch" href="/resume">resume</a>
-            <a class="glitch" href="/resume">resume</a>
-            <a class="glitch" href="/resume">resume</a>
-          </div> -->
         </div>
       </nav>
       <div id="content">
@@ -154,18 +138,20 @@
             </div>
           </div>
         </div>
-        <div id="sec_transition" class="row transition justify-content-center">
+        <div
+          id="sec_transition"
+          class="row transition align-items-center justify-content-center"
+        >
           <div
-            class="transition col-1 d-flex justify-content-center align-items-center"
+            class="transition col-8 d-flex justify-content-center align-items-center"
           >
-            <div class="glitch_container">
-              <div class="line">...</div>
-              <div class="line">...</div>
-              <div class="line">...</div>
-            </div>
+            <h1 class="text portfolio-heading">portfolio</h1>
           </div>
         </div>
-        <div id="programming" class="portfolio container-xl">
+        <div
+          id="programming"
+          class="portfolio align-items-center d-flex container-xl"
+        >
           <div
             class="page row flex-row align-items-center justify-content-center"
           >
@@ -174,30 +160,17 @@
                 <h1>programming</h1>
               </div>
             </div>
-            <div class="d-flex col-sm-6 col-12">
-              <div class="work_container flex-column flex-nowrap">
-                <div
-                  id="projects"
-                  class="col-12 d-flex flex-column flex-nowrap justify-content-center align-items-center"
-                ></div>
-              </div>
+            <div
+              class="d-flex work-container flex-column flex-nowrap col-sm-6 col-12"
+            >
+              <div
+                id="projects"
+                class="col-12 d-flex flex-column flex-nowrap justify-content-center align-items-center"
+              ></div>
             </div>
           </div>
         </div>
-        <div
-          id="third_transition"
-          class="row transition justify-content-center"
-        >
-          <div
-            class="transition col-1 d-flex justify-content-center align-items-center"
-          >
-            <div class="glitch_container">
-              <div class="line">...</div>
-              <div class="line">...</div>
-              <div class="line">...</div>
-            </div>
-          </div>
-        </div>
+
         <div id="publications" class="portfolio container-xl">
           <div
             class="page row flex-row-reverse align-items-center justify-content-center"
@@ -225,153 +198,23 @@
             </div>
           </div>
         </div>
-        <!--
-        <div class="home container-xl">
-          <div class="about row align-items-center justify-content-end">
-            <div
-              class="rect pt-4 pb-4 d-flex col-12 flex-row-reverse flex-wrap align-items-center"
-            >
-              <div
-                class="col-12 col-sm-8 d-flex flex-wrap flex-row align-items-center"
-              >
-                <div class="row justify-content-center">
-                  <div class="hobbyimg col-4">
-                    <img
-                      id="tutor"
-                      src="/public/images/varsitytutors.png"
-                      alt="Varsity Tutors logo"
-                    />
-                  </div>
-                  <div class="hobbyimg col-4">
-                    <img
-                      id="travel"
-                      src="/public/images/travel.jpg"
-                      alt="image of me"
-                    />
-                  </div>
-                  <div class="hobbyimg col-4">
-                    <img
-                      id="gwc"
-                      src="/public/images/gwc.png"
-                      alt="Girls Who Code logo"
-                    />
-                  </div>
-                  <div class="hobbyimg col-4">
-                    <img
-                      id="thrift"
-                      src="/public/images/depop.png"
-                      alt="Depop logo"
-                    />
-                  </div>
-                  <div class="hobbyimg col-4">
-                    <img
-                      id="cook"
-                      src="https://instagram.flnk2-1.fna.fbcdn.net/v/t51.2885-15/e35/117253966_3094595490609167_2167417355648175918_n.jpg?_nc_ht=instagram.flnk2-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=kvUJtuU-eAwAX-QF-b_&oh=4d305870efe2ba6e4d037261c444b60a&oe=5F6BD003"
-                      alt="image of food"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div id="bio" class="col-12 col-sm-4 text">
-                <h2>I'm a...Chef..</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row transition justify-content-center">
-          <div
-            class="transition col-1 d-flex justify-content-center align-items-center"
-          >
-            <div class="glitch_container">
-              <div class="line">...</div>
-              <div class="line">...</div>
-              <div class="line">...</div>
-            </div>
-          </div>
-        </div>
-        <div class="home container-xl">
-          <div
-            id="projects"
-            class="about row align-items-center justify-content-center"
-          >
-            <div
-              id="portfolio_sample"
-              class="col-sm-8 carousel carousel_container"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="#"
-                    ><img class="d-block w-100" src="..." alt="First slide"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#"
-                    ><img class="d-block w-100" src="..." alt="Second slide"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#"
-                    ><img class="d-block w-100" src="..." alt="Third slide"
-                  /></a>
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#portfolio_sample"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only"></span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#portfolio_sample"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only"></span>
-              </a>
-            </div>
-          </div>
-        </div>
         <div class="row transition justify-content-center">
           <div
             class="transition col-3 d-flex justify-content-center align-items-center"
           >
-            <div class="glitch_container d-flex justify-content-center">
+            <div class="contain_glitch d-flex justify-content-center">
               <div class="text end">
-                <span
-                  ><a href="https://www.minawang.com/portfolio/"
-                    >portfolio.</a
-                  ></span
-                ><span><a href="#first_about">top.</a></span>
+                <span><a class="glitch" href="#navigation">top.</a></span>
               </div>
               <div class="text end">
-                <span
-                  ><a href="https://www.minawang.com/portfolio/"
-                    >portfolio.</a
-                  ></span
-                ><span><a href="#first_about">top.</a></span>
+                <span><a class="glitch" href="#navigation">top.</a></span>
               </div>
               <div class="text end">
-                <span
-                  ><a href="https://www.minawang.com/portfolio/"
-                    >portfolio.</a
-                  ></span
-                ><span><a href="#first_about">top.</a></span>
+                <span><a class="glitch" href="#navigation">top.</a></span>
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
       </div>
       <footer id="footer" class="container-fluid">
         <div class="line_break">

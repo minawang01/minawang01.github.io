@@ -7,10 +7,10 @@ let programming = [
     link: "https://runningapp.vercel.app/",
   },
   {
-    title: "A Year in Music",
+    title: "[WIP] A Year in Music",
     description:
       "This page takes information from the Billboard weekly Hot 100 and in 2020 and the MusixMatch API in order to create a sentiment analysis of the top charting songs of 2020. It then uses the d3.js library to plot the trend of sentiments through songs since January 1, 2020.",
-    image: "/public/images/RunningApp.png",
+    image: "/public/images/wip.jpg",
     link: "#",
   },
 ];
