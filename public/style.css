@@ -1,0 +1,50 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(205, 221, 221);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #36494e;
+    font-weight: 700;
+}
+
+#bio {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+    color: #d6c2c7;
+}
+
+a {
+    color: #b38d97;
+}
+
+#socials a {
+    margin-right: 7px;
+}
+
+#smile {
+    color: #b38d97;
+}
+
+.emphasize {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
