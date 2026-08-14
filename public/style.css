@@ -163,6 +163,20 @@ body {
     margin-bottom: 12px;
 }
 
+.panel a.link,
+.panel a.link:visited {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+@media (hover: hover) {
+    .panel a.link:hover {
+        color: var(--teal);
+    }
+}
+
 .icons {
     display: flex;
     justify-content: center;
